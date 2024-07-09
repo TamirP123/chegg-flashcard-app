@@ -37,7 +37,7 @@ export default function CardFormat({ card, index, deckId, url }) {
           onClick={() => handleDelete(card.id)}
         >
           <a href={url} className="text-white">
-            <span className="fa-solid fa-trash" />
+            Delete
           </a>
         </button>
       </div>
