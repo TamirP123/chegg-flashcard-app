@@ -31,15 +31,12 @@ export default function CardFormat({ card, index, deckId, url }) {
           <span className="fa-solid fa-pencil" />
           Edit
         </button>
-        <button
-          type="button"
-          className="btn btn-danger"
-          onClick={() => handleDelete(card.id)}
-        >
-          <a href={url} className="text-white">
-            Delete
-          </a>
-        </button>
+        <button type="button" className="btn btn-danger" onClick={() => handleDelete(card.id)}>
+      
+      <a href={url.pathname} className="text-white">
+        Delete
+      </a>
+    </button>
       </div>
     </div>
   );
